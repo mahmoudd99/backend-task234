@@ -28,7 +28,7 @@ public class ExceptionMiddleware
             var response = new
             {
                 message = "Something went wrong",
-                detail = ex.Message // احذفها في production لو مش عايز تظهر
+                detail = ex.Message 
             };
 
             await context.Response.WriteAsync(JsonSerializer.Serialize(response));
