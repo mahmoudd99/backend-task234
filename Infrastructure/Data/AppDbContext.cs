@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using Task2.Domain;
 using Task2.Models;
 
-namespace Task2.Data
+namespace Task2.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {

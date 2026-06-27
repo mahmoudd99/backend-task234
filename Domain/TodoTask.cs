@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Task2.Models;
 
-namespace Task2.Models
+namespace Task2.Domain
 {
 
     public class TodoTask
@@ -17,6 +18,11 @@ namespace Task2.Models
         public int UserId { get; set; }
 
         public User User { get; set; } = null!;
+
+        internal async Task CreateAsync(TodoTask task)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 

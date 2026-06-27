@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Task2.Domain;
 
 namespace Task2.Models
 {

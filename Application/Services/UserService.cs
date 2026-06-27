@@ -1,8 +1,9 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using Task2.Data;
+using Task2.Application.Interfaces;
+using Task2.Infrastructure.Data;
 using Task2.Models;
-namespace Task2.Services
+namespace Task2.Application.Services
 {
 
     public class UserService : IUserService

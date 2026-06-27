@@ -1,8 +1,9 @@
 ﻿
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Task2.Models;
-using Task2.Services;
+using Task2.Application.Interfaces;
+using Task2.Domain;
+
 namespace Task2.Controllers
 {
 

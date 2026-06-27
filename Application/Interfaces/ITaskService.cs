@@ -1,11 +1,7 @@
-﻿
-using Task2.Models;
-namespace Task2.Services
-{
-    
-    
+﻿using Task2.Domain;
 
-    public interface ITaskService
+namespace Task2.Application.Interfaces
+{    public interface ITaskService
     {
         Task<IEnumerable<TodoTask>> GetAllAsync();
         Task<TodoTask?> GetByIdAsync(int id);

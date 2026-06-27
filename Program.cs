@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
-using Task2.Data;
-using Task2.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Task2.Application.Services;
+using Task2.Application.Interfaces;
+using Task2.Infrastructure.Data;
+using Task2.Infrastructure.Repositories;
 
 internal class Program
 {
@@ -17,6 +19,7 @@ internal class Program
         // Swagger services
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+        builder.Services.AddScoped<ITaskRepository, TaskRepository>();
         builder.Services.AddScoped<ITaskService, TaskService>();
         builder.Services.AddScoped<IUserService, UserService>();
         builder.Services.AddDbContext<AppDbContext>(options =>

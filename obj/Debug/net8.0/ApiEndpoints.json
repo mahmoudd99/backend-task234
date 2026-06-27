@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Task2.Dtos.LoginDto",
+        "Type": "Task2.Application.Dtos.LoginDto",
         "IsRequired": true
       }
     ],
@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Task2.Dtos.RegisterDto",
+        "Type": "Task2.Application.Dtos.RegisterDto",
         "IsRequired": true
       }
     ],
@@ -51,7 +51,7 @@
     "Parameters": [
       {
         "Name": "task",
-        "Type": "Task2.Models.TodoTask",
+        "Type": "Task2.Domain.TodoTask",
         "IsRequired": true
       }
     ],
@@ -88,7 +88,7 @@
       },
       {
         "Name": "task",
-        "Type": "Task2.Models.TodoTask",
+        "Type": "Task2.Domain.TodoTask",
         "IsRequired": true
       }
     ],

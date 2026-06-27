@@ -1,4 +1,4 @@
-﻿namespace Task2.Dtos
+﻿namespace Task2.Application.Dtos
 {
     public class TaskDto
     {

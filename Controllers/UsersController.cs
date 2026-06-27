@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Task2.Application.Interfaces;
 using Task2.Models;
-using Task2.Services;
 
 namespace Task2.Controllers
 {

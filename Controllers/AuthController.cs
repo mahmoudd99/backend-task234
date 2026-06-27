@@ -6,10 +6,10 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Task2.Data;
-using Task2.Dtos;
 using Task2.Models;
 using Microsoft.AspNetCore.Authorization;
+using Task2.Application.Dtos;
+using Task2.Infrastructure.Data;
 
 namespace Task2.Controllers
 {
